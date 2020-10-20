@@ -17,3 +17,15 @@ function maxSum(arr) {
 
   return totalMax;
 }
+
+/**Given a string s consists of upper/lower-case alphabets and empty space characters ' ', return the length of last word (last word means the last appearing word if we loop from left to right) in the string.
+
+If the last word does not exist, return 0.
+
+Note: A word is defined as a maximal substring consisting of non-space characters only. */
+
+var lengthOfLastWord = function(s) {
+  let wordsArr = s.trim().split(' ')
+  return wordsArr[wordsArr.length-1].length;
+
+};
